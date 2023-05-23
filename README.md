@@ -9,17 +9,36 @@ Thanks to MR Gontara Salah which has inspired and given really good knowledge fo
 
 Contains API related to creating A new USER and API end point to get this USER
 
-GET : /users
+```http
+  GET /users
+```
 
-POST /user => with to params (name , prenom)
+```http
+  POST /user
+```
+
+| Parameter   | Type     | Description                       |
+| :-----------| :------- | :-------------------------------- |
+| `name`      | `string` | **Required**.                     |
+| `prenom`    | `string` | **Required**.                     |
 
 # ORDER MICROSERVICE
 
 Contains API related to creating A new ORDER and API end point to get this ORDER
 
-GET : /orders
+```http
+  GET /orders
+```
 
-POST /orders => with to params (name , description)
+```http
+  POST /orders
+```
+
+| Parameter        | Type     | Description                       |
+| :----------------| :------- | :-------------------------------- |
+| `name`           | `string` | **Required**.                     |
+| `description`    | `string` | **Required**.                     |
+
 
 # Requirements
 
