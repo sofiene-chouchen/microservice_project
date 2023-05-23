@@ -9,6 +9,9 @@ Thanks to MR Gontara Salah which has inspired and given really good knowledge fo
 
 Contains API related to creating A new USER and API end point to get this USER
 
+Rest :
+
+
 ```http
   GET /users
 
@@ -25,6 +28,9 @@ query {
   }
 }
 ```
+
+Rest :
+
 
 ```http
   POST /user
@@ -58,6 +64,10 @@ variable
 
 Contains API related to creating A new ORDER and API end point to get this ORDER
 
+
+Rest :
+
+
 ```http
   GET /orders
 ```
@@ -74,6 +84,8 @@ query {
   }
 }
 ```
+Rest :
+
 
 ```http
   POST /orders
