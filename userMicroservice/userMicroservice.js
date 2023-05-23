@@ -30,7 +30,7 @@ const userService = {
     const { name, prenom } = call.request;
 
     try {
-      const createdOrder = await prisma.user.create({
+      const createUser = await prisma.user.create({
         data: {
           name,
           prenom,
