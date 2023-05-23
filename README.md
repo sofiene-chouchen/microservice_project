@@ -11,7 +11,11 @@ Contains API related to creating A new USER and API end point to get this USER
 
 ```http
   GET /users
+
 ```
+GraphQL :
+
+
 ```graphql
 query {
    users {
@@ -30,6 +34,8 @@ query {
 | :-----------| :------- | :-------------------------------- |
 | `name`      | `string` | **Required**.                     |
 | `prenom`    | `string` | **Required**.                     |
+
+GraphQL :
 
 ```graphql
 mutation Mutation($name: String!, $prenom: String!) {
@@ -56,6 +62,9 @@ Contains API related to creating A new ORDER and API end point to get this ORDER
   GET /orders
 ```
 
+GraphQL :
+
+
 ```graphql
 query {
    orders {
@@ -75,6 +84,8 @@ query {
 | `name`           | `string` | **Required**.                     |
 | `description`    | `string` | **Required**.                     |
 
+
+GraphQL :
 
 
 ```graphql
