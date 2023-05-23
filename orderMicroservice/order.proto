@@ -1,0 +1,37 @@
+syntax = "proto3";
+package Order;
+// Définition du message TV show
+message Order {
+string id = 1;
+string name = 2;
+string description = 3;
+// Ajouter d'autres champs de données pour les séries TV au besoin
+}
+// Définition des messages de requête et de réponse pour les méthodes
+message GetOrderRequest {
+string id = 1;
+}
+message GetOrderResponse {
+Order order = 1;
+}
+message SearchOrdersRequest {
+string query = 1;
+}
+message SearchOrdersResponse {
+repeated Order orders = 1;
+}
+message CreateRequest {
+  string name = 2;
+  string description = 3;
+  }
+  message CreateResponse {
+  repeated Order order = 1;
+  }
+// Définition du service de séries TV
+service OrderService {
+rpc GetOrder(GetOrderRequest) returns (GetOrderResponse);
+rpc SearchOrders(SearchOrdersRequest) returns (SearchOrdersResponse);
+rpc CreateOrder(CreateRequest) returns (CreateResponse);
+
+// Ajouter d'autres méthodes au besoin
+}
