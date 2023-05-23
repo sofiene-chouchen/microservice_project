@@ -12,6 +12,15 @@ Contains API related to creating A new USER and API end point to get this USER
 ```http
   GET /users
 ```
+```graphql
+query {
+   users {
+    id
+    name
+    prenom
+  }
+}
+```
 
 ```http
   POST /user
@@ -22,12 +31,39 @@ Contains API related to creating A new USER and API end point to get this USER
 | `name`      | `string` | **Required**.                     |
 | `prenom`    | `string` | **Required**.                     |
 
+```graphql
+mutation Mutation($name: String!, $prenom: String!) {
+  createUser(name: $name, prenom: $prenom) {
+    id
+    name
+    prenom
+  }
+}
+
+variable 
+{
+  "name": "test",
+  "prenom": "test"
+}
+
+```
+
 # ORDER MICROSERVICE
 
 Contains API related to creating A new ORDER and API end point to get this ORDER
 
 ```http
   GET /orders
+```
+
+```graphql
+query {
+   orders {
+    id
+    name
+    description
+  }
+}
 ```
 
 ```http
@@ -39,6 +75,25 @@ Contains API related to creating A new ORDER and API end point to get this ORDER
 | `name`           | `string` | **Required**.                     |
 | `description`    | `string` | **Required**.                     |
 
+
+
+```graphql
+mutation Mutation($name: String!, $description: String!) {
+  createOrder(name: $name, description: $description) {
+    id
+    name
+    description
+  }
+}
+
+}
+
+variable 
+{
+  "name": "test",
+  "description": "test"
+}
+```
 
 # Requirements
 
