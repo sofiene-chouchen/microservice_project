@@ -1,0 +1,25 @@
+<mxfile host="Electron" modified="2023-05-23T19:39:21.051Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="ffJo_Ov8K5awd9Z6YFdP" version="21.2.8" type="device">
+  <diagram name="Page-1" id="DX1ZYfbsvR3Z2e6sch-h">
+    <mxGraphModel dx="1350" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xm4Qshr7qEJztVx7EWaU-1" value="Client&lt;br&gt;" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.laptop;" vertex="1" parent="1">
+          <mxGeometry x="60" y="335" width="100" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Xm4Qshr7qEJztVx7EWaU-14" value="API Getway&lt;br&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="342" y="308.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Xm4Qshr7qEJztVx7EWaU-16" value="Base de donnes" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.rds;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="750" y="314.5" width="72" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="Xm4Qshr7qEJztVx7EWaU-17" value="Microservice Order&lt;br&gt;&amp;nbsp;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="380" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Xm4Qshr7qEJztVx7EWaU-18" value="Microservice User&lt;br&gt;&amp;nbsp;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ec2;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="76.5" height="93" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
