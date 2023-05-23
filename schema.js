@@ -1,5 +1,4 @@
 const { gql } = require("@apollo/server");
-// Définir le schéma GraphQL
 const typeDefs = `#graphql
 type Order {
 id: String!
@@ -12,9 +11,7 @@ name: String!
 prenom: String!
 }
 type Query {
-order(id: String!): Order
 orders: [Order]
-user(id: String!): User
 users: [User]
 }
 type Mutation {

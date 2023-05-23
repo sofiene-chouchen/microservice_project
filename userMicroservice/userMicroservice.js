@@ -16,20 +16,6 @@ const userProtoDefinition = protoLoader.loadSync(userProtoPath, {
 const userProto = grpc.loadPackageDefinition(userProtoDefinition).User;
 
 const userService = {
-  getUser: async (call, callback) => {
-    const { user_id } = call.request;
-    try {
-      const user = await prisma.user.findUnique({ where: { id: user_id } });
-      if (user) {
-        callback(null, { user });
-      } else {
-        callback({ code: 404, message: "User not found" });
-      }
-    } catch (error) {
-      callback({ code: 500, message: "Internal server error" });
-    }
-  },
-
   searchUsers: async (call, callback) => {
     const { query } = call.request;
     try {
@@ -40,29 +26,20 @@ const userService = {
     }
   },
 
-  createUser: async (_, { name, prenom }) => {
-    const clientUser = new userProto.UserService(
-      "localhost:50051",
-      grpc.credentials.createInsecure()
-    );
+  createUser: async (call, callback) => {
+    const { name, prenom } = call.request;
 
     try {
-      const response = await new Promise((resolve, reject) => {
-        clientUser.createUser(
-          { name: name, prenom: prenom },
-          (err, response) => {
-            if (err) {
-              reject(err);
-            } else {
-              resolve(response);
-            }
-          }
-        );
+      const createdOrder = await prisma.user.create({
+        data: {
+          name,
+          prenom,
+        },
       });
 
-      return response.user ? [response.user] : [];
+      callback(null, { user: [createUser] });
     } catch (error) {
-      throw new Error(error);
+      callback({ code: 500, message: "Internal server error" });
     }
   },
 };
