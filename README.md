@@ -10,6 +10,7 @@ Thanks to MR Gontara Salah which has inspired and given really good knowledge fo
 Contains API related to creating A new USER and API end point to get this USER
 
 GET : /users
+
 POST /user => with to params (name , prenom)
 
 # ORDER MICROSERVICE
@@ -17,6 +18,7 @@ POST /user => with to params (name , prenom)
 Contains API related to creating A new ORDER and API end point to get this ORDER
 
 GET : /orders
+
 POST /orders => with to params (name , description)
 
 # Requirements
@@ -30,5 +32,25 @@ Contentful CLI (only for write access)
 Clone the repo and install the dependencies.
 
 git clone https://github.com/sofiene-chouchen/microservice_project.git
-cd microserviceProject
-npm install
+
+`cd microserviceProject`
+
+`npm install`
+
+# Run
+
+To start the ApiGateway server, run the following
+
+`node apiGerway.js`
+
+To start the User server, run the following
+
+`cd userMicroservice`
+
+`node userMicroservice.js`
+
+To start the Order server, run the following
+
+`cd orderMicroservice`
+
+`node orderMicroservice.js`
