@@ -7,9 +7,13 @@ Thanks to MR Gontara Salah which has inspired and given really good knowledge fo
 
 
 # Technologies
-"*" :gRPC: Used for efficient communication between microservices.
-"*"  :GraphQL: Implemented for flexible and efficient querying of data.
-"*"  :REST: RESTful APIs are used for exposing the services to external clients.
+gRPC: Used for efficient communication between microservices.
+
+
+GraphQL: Implemented for flexible and efficient querying of data.
+
+
+REST: RESTful APIs are used for exposing the services to external clients.
 
 
 # USER MICROSERVICE
