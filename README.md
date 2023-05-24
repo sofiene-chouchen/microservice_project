@@ -131,9 +131,15 @@ variable
 
 # Requirements
 
-Node 18
-Git
-Contentful CLI (only for write access)
+Ensure you have the following software installed on your local machine:
+
+git
+
+Node.js (version 12 or higher)
+
+npm (version 6 or higher)
+
+postgres
 
 # Common setup
 
