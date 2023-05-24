@@ -5,6 +5,13 @@ Thanks to MR Gontara Salah which has inspired and given really good knowledge fo
 
 ![image!](Diagram1.jpg)
 
+
+# Technologies
+Markup :gRPC: Used for efficient communication between microservices.
+Markup :GraphQL: Implemented for flexible and efficient querying of data.
+Markup :REST: RESTful APIs are used for exposing the services to external clients.
+
+
 # USER MICROSERVICE
 
 Contains API related to creating A new USER and API end point to get this USER
